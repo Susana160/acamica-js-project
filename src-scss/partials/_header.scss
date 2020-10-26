@@ -1,0 +1,101 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+:root {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav .principal-nav ul {
+    @include lista-sin-bullets;
+}
+
+/*Media querie para mobile para que no afecte después los estilos del menú desktop*/
+@media screen and (max-width: 1000px) {
+    nav .principal-nav ul {
+        display: none;
+    }
+}
+
+.principal-nav {
+    input {
+       &:checked ~ ul{ 
+            background-color: rgba(87,46,229,0.90); 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 540px;
+            //width: 250px;
+           //transform: translateX(0);
+           transition: transform 0.5s ease;
+           -moz-transition: height 0.5s ease-in-out;
+           -o-transition: height 0.5s ease-in-out;
+           -webkit-transition: height 0.5s ease-in-out;
+       }
+   }
+}
+
+/*Estilos especificos para el input*/
+header nav .principal-nav input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******ESTILOS GENERALES HEADER********/
+.principal-nav input ul {
+    display: block;
+}
+
+.clean-list li {
+    display: inline-block;
+}
+
+// .header {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     padding: 20px;
+// }
+
+// .header {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+
+ul li {
+    padding: 15px;
+    font-family: $fuente-titulos;
+    font-size: 0.9375rem;
+}
+
+// .principal-nav {
+//     background-color: rgba(87,46,229,0.90);   
+// }
+
+.header ul li a {
+    color: white;
+}
+
+
+
+

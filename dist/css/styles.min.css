@@ -1,4 +1,84 @@
+@charset "UTF-8";
+/*Fuentes del archivo*/
 /*Estilos particulares*/
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav .principal-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/*Media querie para mobile para que no afecte después los estilos del menú desktop*/
+@media screen and (max-width: 1000px) {
+  nav .principal-nav ul {
+    display: none;
+  }
+}
+
+.principal-nav input:checked ~ ul {
+  background-color: rgba(87, 46, 229, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 540px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -moz-transition: height 0.5s ease-in-out;
+  -o-transition: height 0.5s ease-in-out;
+  -webkit-transition: height 0.5s ease-in-out;
+}
+
+/*Estilos especificos para el input*/
+header nav .principal-nav input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+}
+
+/******ESTILOS GENERALES HEADER********/
+.principal-nav input ul {
+  display: block;
+}
+
+.clean-list li {
+  display: inline-block;
+}
+
+ul li {
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9375rem;
+}
+
+.header ul li a {
+  color: white;
+}
+
 body {
   background-color: papayawhip;
 }
