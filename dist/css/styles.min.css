@@ -285,4 +285,27 @@ div.trending {
 .footer div {
   padding: 24px 0 47px 0;
 }
+
+@media screen and (min-width: 1000px) {
+  .footer {
+    padding-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer div {
+    padding: 0;
+  }
+  .footer .parrafo-compartir {
+    position: relative;
+    right: 50px;
+  }
+  .footer .redesSociales {
+    position: relative;
+    right: 350px;
+  }
+}
 /*# sourceMappingURL=styles.min.css.map */

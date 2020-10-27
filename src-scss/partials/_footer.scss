@@ -8,3 +8,25 @@
 .footer div {
     padding: 24px 0 47px 0;
 }
+
+@media screen and (min-width: 1000px){
+    .footer {
+        padding-bottom: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer div {
+        padding: 0;
+    }
+
+    .footer .parrafo-compartir {
+        position: relative;
+        right: 50px;
+    }
+
+    .footer .redesSociales {
+        position: relative;
+        right: 350px;
+    }
+}
