@@ -4,10 +4,6 @@
 /*25px*/
 /*Colores generales*/
 /*Estilos particulares*/
-body {
-  background-color: #121212;
-}
-
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
