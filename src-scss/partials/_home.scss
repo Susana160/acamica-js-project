@@ -1,3 +1,4 @@
+
 p {
     margin: 0 auto;
 }
@@ -22,8 +23,29 @@ p {
     max-width: 100%;
 }
 
+.barraBuscadora {
+    border: 1px solid;
+    border-radius: 27px;
+    border-color: $color-azul;
+    padding: 15px 23%;
+}
+
+.barraBuscadora::placeholder {
+    position: relative;
+    right: 40px;
+    font-family: $fuente-roboto;
+    font-size: $size-16px;
+    font-weight: bold;
+}
+
+.lupita {
+    position: relative;
+    bottom: 33px;
+    left: 150px;
+}
+
 div.trending {
-    margin-top: 40%;
+    margin-top: 10%;
     text-align: center;
     padding: 0 50px;
     font-family: $fuente-titulos;
@@ -41,11 +63,12 @@ div.trending {
 }
 
 .section2 {
-    margin-top: 30px;
+    margin-top: 40px;
     background-color: #F3F5F8;
 }
 
 .section2 h2 {
+    padding: 40px 0 0;
     font-family: $fuente-titulos;
     color: $color-azul;
     font-size: 1.25rem;
@@ -53,8 +76,50 @@ div.trending {
 }
 
 .section2 p {
+    padding: 0 100px;
     font-family: $fuente-roboto;
     font-weight: bold;
     text-align: center;
     color: black;
+}
+
+@media screen and (min-width: 1000px){
+    .section1 h1 {
+        font-size: $size-35px;
+        padding: 70px 380px 24px;
+    }
+
+    .barraBuscadora {
+        padding: 15px;
+        margin: 0 25%;
+        text-align: left;
+    }
+
+    .barraBuscadora::placeholder {
+        padding-left: 40px;
+    }
+
+    .lupita {
+        position: relative;
+        bottom: 33px;
+        left: 300px;
+    }
+
+    div.trending {
+        margin: 3% 0 6%;
+    }
+    
+    .section2 h2 {
+        padding: 40px 0 10px;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+    
+    .section2 p {
+        padding: 0 100px 60px;
+        font-family: $fuente-roboto;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+    }
 }

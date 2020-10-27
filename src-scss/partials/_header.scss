@@ -2,6 +2,11 @@
 *::after {
     box-sizing: border-box;
 }
+
+* {
+    margin: 0 auto;
+}
+
 :root {
     font-size: 16px;
 }
@@ -81,7 +86,7 @@ ul li {
     }
 
     .header {
-        max-width: 1150px;
+        max-width: 1400px;
         margin: 0 auto;
     }
 
