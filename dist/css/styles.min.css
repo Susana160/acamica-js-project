@@ -4,6 +4,18 @@
 /*25px*/
 /*Colores generales*/
 /*Estilos particulares*/
+.normal_background {
+  background-color: white;
+}
+
+.dark_mode {
+  background-color: #121212;
+}
+
+.dark_mode .section2 {
+  background-color: gray;
+}
+
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
