@@ -1,10 +1,24 @@
-.normal_background {
-    background-color: white;
-}
+
 .dark_mode {
-    background-color: #121212;
+    background-color: #37383C;
 }
 
 .dark_mode .section2 {
-    background-color: gray;
+    background-color: #222326;
+}
+
+.dark_mode .section1 h1 {
+    color: white;
+}
+
+.dark_mode .barraBuscadora{
+    background-color: #37383C;
+}
+
+.dark_mode div.trending {
+    color: white;
+}
+
+.dark_mode .barra_arriba {
+    background-color: black;
 }
