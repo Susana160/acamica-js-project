@@ -285,6 +285,39 @@ div.trending {
   right: 0;
 }
 
+/*Carousel*/
+.gifs-recomendados .contenedor-principal-carousel {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.gifs-recomendados .contenedor-principal-carousel .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.gifs-recomendados .contenedor-principal-carousel .carousel div img {
+  min-width: 20%;
+  width: 100%;
+  vertical-align: top;
+}
+
+.gifs-recomendados .carousel div :hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background: purple;
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
 @media screen and (min-width: 1000px) {
   .section1 h1 {
     font-size: 2.1875rem;
